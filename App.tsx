@@ -57,3 +57,83 @@ export default function App() {
               uri: "https://churchillwild.com/wp-content/uploads/2016/11/growlingpolarbearnanuk.jpg",
             }}
           />
+          {/* Post Actions and Details */}
+          <View style={styles.postDetails}>
+            <View style={styles.postActions}>
+              <View style={styles.leftActions}>
+                <TouchableOpacity onPress={() => {}}>
+                  <Ionicons
+                    name="heart-outline"
+                    size={24}
+                    color="black"
+                    style={styles.actionIcon}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => {}}>
+                  <Ionicons
+                    name="chatbubble-outline"
+                    size={24}
+                    color="black"
+                    style={styles.actionIcon}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => {}}>
+                  <Ionicons
+                    name="paper-plane-outline"
+                    size={24}
+                    color="black"
+                    style={styles.actionIcon}
+                  />
+                </TouchableOpacity>
+              </View>
+              <TouchableOpacity onPress={() => {}}>
+                <Ionicons name="bookmark-outline" size={24} color="black" />
+              </TouchableOpacity>
+            </View>
+
+            <Text style={styles.likes}>
+              Liked by paisley.print.48 and 225 others
+            </Text>
+            <Text style={styles.caption}>Nanuk Polar Bear Lodge </Text>
+            <Text style={styles.comments}>View all 12 comments</Text>
+            <Text style={styles.comment}>
+              <Text style={styles.commentUser}>lil_wyatt838</Text> Awesome photo
+            </Text>
+            <Text style={styles.comment}>
+              <Text style={styles.commentUser}>pia.in.a.pod</Text> Gorg. Love
+              it! ❤️
+            </Text>
+            <Text style={styles.comments}>1 Day Ago</Text>
+          </View>
+        </View>
+
+        {/* Alert Button */}
+        <TouchableOpacity
+          style={styles.alertButton}
+          onPress={() => Alert.alert("Alert Button pressed")}
+        >
+          <Text style={styles.alertButtonText}>Alert</Text>
+        </TouchableOpacity>
+      </ScrollView>
+
+      {/* Bottom Tab */}
+      <View style={styles.bottomTab}>
+        <TouchableOpacity style={styles.tabButton} onPress={() => {}}>
+          <Ionicons name="home-outline" size={24} color="black" />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.tabButton} onPress={() => {}}>
+          <Ionicons name="search-outline" size={24} color="black" />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.tabButton} onPress={() => {}}>
+          <Ionicons name="add-circle-outline" size={24} color="black" />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.tabButton} onPress={() => {}}>
+          <Ionicons name="heart-outline" size={24} color="black" />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.tabButton} onPress={() => {}}>
+          <Ionicons name="person-outline" size={24} color="black" />
+        </TouchableOpacity>
+      </View>
+    </SafeAreaView>
+  );
+}
