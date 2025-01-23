@@ -137,3 +137,137 @@ export default function App() {
     </SafeAreaView>
   );
 }
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    paddingTop: Platform.OS === "android" ? RNStatusBar.currentHeight : 0,
+  },
+  header: {
+    paddingHorizontal: 15,
+    paddingTop: 10,
+    paddingBottom: 5,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  backButton: {
+    padding: 5,
+  },
+  headerText: {
+    fontSize: 18,
+    textAlign: "center",
+    flex: 1,
+    color: "#bbb",
+  },
+  headerRight: {
+    width: 24,
+  },
+  subHeader: {
+    paddingHorizontal: 15,
+    paddingBottom: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: "#ddd",
+    alignItems: "center",
+  },
+  subHeaderText: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: "#000",
+  },
+  scrollContainer: {
+    paddingBottom: 50,
+  },
+  postContainer: {
+    marginBottom: 20,
+  },
+  userInfo: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 10,
+    paddingHorizontal: 15,
+  },
+  profilePic: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    marginRight: 10,
+  },
+  username: {
+    fontWeight: "normal",
+    fontSize: 16,
+  },
+  menuDots: {
+    flexDirection: "row",
+    marginLeft: "auto",
+  },
+  menuDot: {
+    fontSize: 18,
+    marginHorizontal: 5,
+  },
+  postImage: {
+    width: "100%",
+    height: 400,
+    marginBottom: 10,
+  },
+  postDetails: {
+    paddingHorizontal: 15,
+    paddingBottom: 15,
+  },
+  postActions: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 10,
+  },
+  leftActions: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  actionIcon: {
+    marginRight: 10,
+  },
+  likes: {
+    fontWeight: "bold",
+    marginBottom: 5,
+  },
+  caption: {
+    marginBottom: 5,
+  },
+  comments: {
+    color: "#888",
+    marginBottom: 5,
+  },
+  comment: {
+    marginBottom: 5,
+  },
+  commentUser: {
+    fontWeight: "bold",
+  },
+  alertButton: {
+    marginVertical: 10,
+    padding: 10,
+    backgroundColor: "#007AFF",
+    alignItems: "center",
+  },
+  alertButtonText: {
+    color: "#fff",
+    fontSize: 16,
+  },
+  bottomTab: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    paddingVertical: 10,
+    borderTopWidth: 1,
+    borderTopColor: "#ddd",
+    backgroundColor: "#fff",
+    position: "absolute",
+    bottom: 0,
+    width: "100%",
+  },
+  tabButton: {
+    padding: 10,
+  },
+});
