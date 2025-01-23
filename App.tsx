@@ -57,6 +57,7 @@ export default function App() {
               uri: "https://churchillwild.com/wp-content/uploads/2016/11/growlingpolarbearnanuk.jpg",
             }}
           />
+
           {/* Post Actions and Details */}
           <View style={styles.postDetails}>
             <View style={styles.postActions}>
@@ -137,7 +138,6 @@ export default function App() {
     </SafeAreaView>
   );
 }
-
 
 const styles = StyleSheet.create({
   container: {
